@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.transController">
+   <children>
+      <TextArea fx:id="text" editable="false" layoutX="531.0" maxHeight="900.0" maxWidth="460.0" prefHeight="400.0" prefWidth="418.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextArea>
+      <ImageView fx:id="transaction" fitHeight="400.0" fitWidth="596.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/a633d1e3280cf118c9fa182ec6874a29.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

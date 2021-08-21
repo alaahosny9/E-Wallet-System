@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+    <right>
+        <AnchorPane prefHeight="398.0" prefWidth="407.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+            <children>
+            <ImageView fx:id="loginB" fitHeight="39.0" fitWidth="170.0" layoutX="127.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/login-button.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="myButton2" layoutX="125.0" layoutY="285.0" mnemonicParsing="false" onAction="#loginButtonAction" onKeyPressed="#loginButtonAction" prefHeight="39.0" prefWidth="126.0" style="-fx-background-color: no;">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="regB" fitHeight="62.0" fitWidth="159.0" layoutX="109.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/0PVOvb-register-button-free-png.png" />
+               </image>
+            </ImageView>
+                <Button fx:id="myButton" layoutX="117.0" layoutY="335.0" mnemonicParsing="false" onAction="#createRegisterForm" onKeyPressed="#loginButtonAction" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: nocolor;">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font></Button>
+                <Label layoutX="89.0" layoutY="74.0" prefWidth="55.0" text="Wallet id" textFill="#615f5f">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="walletID" layoutX="89.0" layoutY="91.0" onKeyPressed="#handle" opacity="0.59" prefHeight="26.0" prefWidth="199.0" promptText="ID" style="-fx-background-radius: 12;">
+                    <font>
+                        <Font size="14.0" />
+                    </font></TextField>
+                <Label layoutX="87.0" layoutY="199.0" text="Password" textFill="#615f5f">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="63.0" layoutY="62.0" prefHeight="2.0" prefWidth="262.0" />
+                <PasswordField fx:id="Password" layoutX="89.0" layoutY="216.0" onKeyPressed="#handle" opacity="0.59" prefHeight="26.0" prefWidth="199.0" promptText="Password" style="-fx-background-radius: 12;">
+                    <font>
+                        <Font size="14.0" />
+                    </font></PasswordField>
+                <Label layoutX="37.0" layoutY="39.0" text="PLEASE LOGIN / SIGNUP TO USE YOUR WALLET!" textFill="#4e469c">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="login" alignment="CENTER" contentDisplay="CENTER" layoutX="-9.0" layoutY="257.0" maxHeight="2.0E8" maxWidth="2.0E8" prefHeight="28.0" prefWidth="406.0" textFill="#ff0303">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="Mobile" layoutX="89.0" layoutY="151.0" onKeyPressed="#handle" opacity="0.59" prefHeight="26.0" prefWidth="199.0" promptText="Mobile" style="-fx-background-radius: 12;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="87.0" layoutY="131.0" prefHeight="14.0" prefWidth="92.0" text="Mobile No." textFill="#615f5f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="idrequired" layoutX="14.0" layoutY="94.0" prefHeight="23.0" prefWidth="57.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="mobrequired" layoutX="14.0" layoutY="154.0" prefHeight="23.0" prefWidth="57.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="passrequired" layoutX="14.0" layoutY="219.0" prefHeight="23.0" prefWidth="57.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancelButton" alignment="CENTER" layoutX="362.0" layoutY="-2.0" mnemonicParsing="false" onAction="#cancelButtonAction" prefHeight="31.0" prefWidth="30.0" style="-fx-background-color: #ff0000; -fx-background-radius: 1;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="myButton1" layoutX="116.0" layoutY="326.0" mnemonicParsing="false" onAction="#createRegisterForm" onKeyPressed="#loginButtonAction" prefHeight="27.0" prefWidth="146.0" style="-fx-background-color: no;">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            </children></AnchorPane>
+    </right>
+    <left>
+        <ImageView fx:id="myImage" fitHeight="409.0" fitWidth="282.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            <image>
+                <Image url="@../../images/bank.jpg" />
+            </image>
+        </ImageView>
+    </left>
+</BorderPane>
